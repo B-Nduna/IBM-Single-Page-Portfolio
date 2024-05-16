@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Creating a single page website</title>
+    <link rel="stylesheet" href="./style.css"/>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Bongani Nduna
+          <div class="contact_info">
+            <img src="images.png\envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+            bnduna@jeemail.com
+          </div>
+          <div style="clear:both;"></div>
+          <div class="contact_info">
+            <img src="images.png\phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+            +21 1234567890
+          </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#Skills">Skills</a>
+          <a class="topmenu" href="#Projects">Projects</a>
+          <a class="topmenu" href="#Recommendations">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="images.png/about me.jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, Bongani Nduna! <img src="images.png/about me.jpg" width="60px"/>
+          </h1>
+          <p>
+            I'm a passionate web developer with a keen eye for detail and a love for crafting beautiful and functional websites. With a background in computer science and years of experience in the industry, I specialize in creating responsive and user-friendly web experiences.
+            
+            Whether it's building sleek and modern designs from scratch or optimizing existing websites for performance and accessibility, I thrive on turning ideas into reality through code. My expertise includes HTML, CSS, JavaScript, and various web development frameworks like React and Vue.js.
+          </p>
+      </div>
+    </section>
+    
+    <!-- Skills -->
+    <section id="Skills">
+      <h2>Skills:</h2>
+      <div style="clear:both;"></div>
+      
+      <div class="all_skills">
+        <div class="skill">
+          <img src="images.png/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 Years Experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="images.png/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 Years Experience</p>
+        </div>  
+        
+        
+        <div class="skill">
+          <img src="images.png/java.png"/>
+          <h6>Java</h6>
+          <p>2 Years Experience</p>
+        </div>  
+
+        
+        <div class="skill">
+          <img src="images.png/node.png"/>
+          <h6>Node JS</h6>
+          <p>2 Years Experience</p>
+        </div>  
+
+        
+        <div class="skill">
+          <img src="images.png/react.png"/>
+          <h6>React JS</h6>
+          <p>1 Year Eperience</p>
+        </div>  
+        <!-- Add more skills here -->
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="Projects">
+      <h2>Projects</h2>
+      <div style="clear:both;"></div>
+      <div id="projects-container" class="projects-container">
+        <div class="project-card">
+          <h3>Green Escapes</h3>
+          <ul>
+            <li>Developed an web app using HTML,CSS,Javascript and Navic system for the development of rural areas via tourism annd hospitality.</li>
+          </ul>
+        </div>
+        <hr>
+        <div class="project-card">
+          <h3>Simple Interest Calculator</h3>
+          <ul>
+            <li>Developed a simple interest calculator which takes input for Rate of interest,years,amount of money and gives dynmic output in sentence.</li>
+          </ul>
+        </div>
+        <hr>
+        <div class="project-card">
+          <h3>Units Converter</h3>
+          <ul>
+            <li>Created a multi page unit converter which converts tempertaure,distance,weight,simplemath,height and time.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="Recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Bongani's dedication to quality and attention to detail are unmatched. He delivered exceptional results on our website redesign project, exceeding our expectations.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Bongani was a breeze! His technical expertise and collaborative approach made our website overhaul seamless and successful. Highly recommend him!
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Bongani's ability to translate our vision into a functional and visually stunning website was impressive. His professionalism and timely delivery were commendable. A pleasure to work with!
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Bongani is a true professional. His attention to detail and problem-solving skills were invaluable in completing our project on time and within budget. Highly recommended!
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+    
+    <div class="iconbutton">
+      <a href="#home">         
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+    
+    <div class="popup" id="popup" class="flex_center">
+      <img src="images.png/checkmark--outline.svg"/>
+      <h3>Thank you for leaving a recommendation!</h3> <!-- Appropriate confirmation message -->
+      <button >Ok</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
